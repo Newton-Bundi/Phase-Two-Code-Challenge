@@ -1,19 +1,21 @@
-import React,{useState, useEffect}  from "react";
+import BotCard from "./BotCard";
 
 
 
-function BotCollection() {
-  const [bot, setBot] = useState([])
-
-  useEffect(){
-    fetch
-  }
+function BotCollection({bots,addBotToArmy}) {
 
   return (
     <div className="ui four column grid">
       <div className="row">
-        {/*...and here..*/}
-        Collection of all bots
+      Collection of all bots
+      <ul class="bot-list">
+      {bots.map((bot) => {
+        return (
+      <BotCard key={bot.id} addBotToArmy={addBotToArmy}/>
+      );
+    })}
+    </ul>
+
       </div>
     </div>
   );
