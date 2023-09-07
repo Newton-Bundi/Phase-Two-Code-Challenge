@@ -1,16 +1,18 @@
 {
-  "name": "react-hooks-components-basics-lab",
+  "name": "react-hooks-bot-battlr-code-challenge",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "semantic-ui-css": "^2.4.1",
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "echo \".results.json\" && react-scripts test --reporters=@learn-co-curriculum/jest-learn-reporter --reporters=default --watchAll",
+    "server": "json-server --watch db.json -p 8002",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -32,10 +34,6 @@
     ]
   },
   "devDependencies": {
-    "@learn-co-curriculum/jest-learn-reporter": "^0.1.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "mocha": "^8.2.1"
+    "json-server": "^0.15.1"
   }
 }
