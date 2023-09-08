@@ -41,13 +41,10 @@ function BotsPage() {
     fetch(`http://localhost:8002/bots/${bot.id}`, {
       method: 'DELETE',
     })
-      .then(() => {
-        releaseBotFromArmy(bot);
-      })
-      .catch((error) => {
-        console.error('Error discharging bot:', error);
-      });
-  };
+    .then((r) => r.json())
+    .then(() => console.log("deleted!"));
+}
+;
 
 
   return (
