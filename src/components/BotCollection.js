@@ -1,7 +1,5 @@
 import BotCard from "./BotCard";
 
-
-
 function BotCollection({bots,addBotToArmy}) {
 
   return (
@@ -11,7 +9,7 @@ function BotCollection({bots,addBotToArmy}) {
       <ul class="bot-list">
       {bots.map((bot) => {
         return (
-      <BotCard key={bot.id} addBotToArmy={addBotToArmy}/>
+      <BotCard key={bot.id} bot={bot} addBotToArmy={addBotToArmy}/>
       );
     })}
     </ul>

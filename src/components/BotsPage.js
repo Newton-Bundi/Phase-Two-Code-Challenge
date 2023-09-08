@@ -29,6 +29,7 @@ function BotsPage() {
     }
   };
 
+
   // Releasing bot from army
   const releaseBotFromArmy = (bot) => {
     const updatedArmy = botArmy.filter((b) => b.id !== bot.id);
