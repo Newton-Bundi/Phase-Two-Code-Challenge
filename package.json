@@ -5,15 +5,16 @@
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "4.0.1",
     "semantic-ui-css": "^2.4.1",
     "web-vitals": "^0.2.4"
   },
+  "devDependencies": {
+    "json-server": "^0.15.1"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "server": "json-server --watch db.json -p 8002",
-    "eject": "react-scripts eject"
+    "start": "PORT=8000 react-scripts start",
+    "server": "json-server --watch db.json -p 8002"
   },
   "eslintConfig": {
     "extends": [
@@ -32,8 +33,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "json-server": "^0.15.1"
   }
 }
